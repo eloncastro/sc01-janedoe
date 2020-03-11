@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  text-align: center;
+}
+
+/* header start */
+
+header {
+  background-color: rgba(255, 255, 255,1);
+  text-align: center;
+  /* border: 2px solid #ccc; */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px 20px;
+  /* border: 2px solid black; */
+}
+
+nav li a {
+  text-decoration: none;
+  color: #555;
+}
+
+nav li a.active {
+  font-weight: 700;
+  color: orangered;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+/* header end */
+
+/* footer start */
+
+footer {
+  background-color: #f2f2f2;
+}
+
+footer p {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+/* footer end */
+
+/* banner home */
+
+section#banner {
+  background-image: url('../img/jane.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 73vh;
+  /* viewport height */
+}
+
+/* banner home end */
+
+/* about start */
+
+main {
+  margin-top: 138px;
+}
+
+main#about {
+  text-align: center;
+  padding: 30px 0;
+}
+
+main#about h2 {
+  font-size: 30px;
+}
+
+main#about img {
+  width: 450px;
+}
+
+main#about p {
+  margin: 30px 0;
+  line-height: 35px;
+}
+
+main#about cite {
+  font-size: 22px;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* about end */
+/* music start */
+
+main#music {
+  width: 900px;
+  max-width: 100%;
+  margin: 138px auto 30px;
+}
+
+main#music iframe {
+  width: 100%;
+  max-width: 640px;
+  max-height: 360px;
+}
+
+/* music end */
+
+/* contact end */
+
+main#contact {
+  width: 900px;
+  max-width: 100%;
+  margin: 30px auto;
+}
+
+/* home v2 */
+
+section#concept,
+section#songs {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+section#songs img {
+  width: 100%;
+}
+
+.duas-colunas {
+  overflow: hidden;
+}
+
+.duas-colunas>div {
+  width: 50%;
+  float: left;
+}
+
+section#songs li {
+  padding: 20px 0;
+}
+
+section#songs li strong {
+  color: orange;
+}
+
+@media (max-width:768px) {
+  .duas-colunas>div {
+    width: 100%;
+  }
+  section#concept,
+  section#songs,
+  main#music {
+    padding: 0 40px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  main#music ul li {
+    font-size: 24px;
+    line-height: 35px;
+    color:red;
+  }
+}
